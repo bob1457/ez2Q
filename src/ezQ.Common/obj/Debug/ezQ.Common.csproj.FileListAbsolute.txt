@@ -1,0 +1,10 @@
+C:\Development\Projects\SC\ezQ\ezQ\ezQ.Common\bin\Debug\ezQ.Common.dll
+C:\Development\Projects\SC\ezQ\ezQ\ezQ.Common\bin\Debug\ezQ.Common.pdb
+C:\Development\Projects\SC\ezQ\ezQ\ezQ.Common\obj\Debug\ezQ.Common.csprojResolveAssemblyReference.cache
+C:\Development\Projects\SC\ezQ\ezQ\ezQ.Common\obj\Debug\ezQ.Common.dll
+C:\Development\Projects\SC\ezQ\ezQ\ezQ.Common\obj\Debug\ezQ.Common.pdb
+C:\Development\Projects\SC\ezQ\src\ezQ.Common\bin\Debug\ezQ.Common.dll
+C:\Development\Projects\SC\ezQ\src\ezQ.Common\bin\Debug\ezQ.Common.pdb
+C:\Development\Projects\SC\ezQ\src\ezQ.Common\obj\Debug\ezQ.Common.csprojResolveAssemblyReference.cache
+C:\Development\Projects\SC\ezQ\src\ezQ.Common\obj\Debug\ezQ.Common.dll
+C:\Development\Projects\SC\ezQ\src\ezQ.Common\obj\Debug\ezQ.Common.pdb

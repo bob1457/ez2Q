@@ -1,0 +1,14 @@
+C:\Development\Projects\SC\ezQ\ezQ\ezQ.Services\obj\Debug\ezQ.Services.csprojResolveAssemblyReference.cache
+C:\Development\Projects\SC\ezQ\ezQ\ezQ.Services\bin\Debug\ezQ.Services.dll
+C:\Development\Projects\SC\ezQ\ezQ\ezQ.Services\bin\Debug\ezQ.Services.pdb
+C:\Development\Projects\SC\ezQ\ezQ\ezQ.Services\bin\Debug\ezQ.Core.dll
+C:\Development\Projects\SC\ezQ\ezQ\ezQ.Services\bin\Debug\ezQ.Core.pdb
+C:\Development\Projects\SC\ezQ\ezQ\ezQ.Services\obj\Debug\ezQ.Services.dll
+C:\Development\Projects\SC\ezQ\ezQ\ezQ.Services\obj\Debug\ezQ.Services.pdb
+C:\Development\Projects\SC\ezQ\src\ezQ.Services\bin\Debug\ezQ.Services.dll
+C:\Development\Projects\SC\ezQ\src\ezQ.Services\bin\Debug\ezQ.Services.pdb
+C:\Development\Projects\SC\ezQ\src\ezQ.Services\bin\Debug\ezQ.Core.dll
+C:\Development\Projects\SC\ezQ\src\ezQ.Services\bin\Debug\ezQ.Core.pdb
+C:\Development\Projects\SC\ezQ\src\ezQ.Services\obj\Debug\ezQ.Services.csprojResolveAssemblyReference.cache
+C:\Development\Projects\SC\ezQ\src\ezQ.Services\obj\Debug\ezQ.Services.dll
+C:\Development\Projects\SC\ezQ\src\ezQ.Services\obj\Debug\ezQ.Services.pdb

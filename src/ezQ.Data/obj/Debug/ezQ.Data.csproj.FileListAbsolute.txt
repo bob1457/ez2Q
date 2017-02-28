@@ -8,3 +8,8 @@ C:\Development\Projects\SC\ezQ\src\ezQ.Data\bin\Debug\ezQ.Data.pdb
 C:\Development\Projects\SC\ezQ\src\ezQ.Data\obj\Debug\ezQ.Data.csprojResolveAssemblyReference.cache
 C:\Development\Projects\SC\ezQ\src\ezQ.Data\obj\Debug\ezQ.Data.dll
 C:\Development\Projects\SC\ezQ\src\ezQ.Data\obj\Debug\ezQ.Data.pdb
+C:\Projects\ez2Q\src\ezQ.Data\bin\Debug\ezQ.Data.dll
+C:\Projects\ez2Q\src\ezQ.Data\bin\Debug\ezQ.Data.pdb
+C:\Projects\ez2Q\src\ezQ.Data\obj\Debug\ezQ.Data.csprojResolveAssemblyReference.cache
+C:\Projects\ez2Q\src\ezQ.Data\obj\Debug\ezQ.Data.dll
+C:\Projects\ez2Q\src\ezQ.Data\obj\Debug\ezQ.Data.pdb

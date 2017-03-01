@@ -9,5 +9,9 @@ namespace ezQ.Core.Services
     public interface ITestService
     {
         string GetTaxRate();
+
+        string GetActionDone();
+
+        void AppServiceAction();
     }
 }

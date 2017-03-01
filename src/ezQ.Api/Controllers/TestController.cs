@@ -41,6 +41,32 @@ namespace ezQ.Api.Controllers
 
         }
 
+        [Route("act")]
+        public string Act()
+        {
+            //return "3.900000";
 
+            //var rate = _testService.GetTaxRate();
+
+            //return rate.ToString();
+
+            return _testService.GetActionDone();
+
+
+        }
+
+        [Route("act2")]
+        public void Act2()
+        {
+            //return "3.900000";
+
+            //var rate = _testService.GetTaxRate();
+
+            //return rate.ToString();
+
+             _testService.AppServiceAction();
+
+            //return "All done!";
+        }
     }
 }

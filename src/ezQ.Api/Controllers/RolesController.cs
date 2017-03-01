@@ -12,7 +12,7 @@ using ezQ.Api.Infrastructure;
 
 namespace ezQ.Api.Controllers
 {
-    [Authorize(Roles = "Admin")]
+    //[Authorize(Roles = "Admin")]
     [RoutePrefix("api/roles")]
     public class RolesController : BaseApiController
     {

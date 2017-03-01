@@ -16,5 +16,17 @@ namespace ezQ.Services
         {
             return "3.9999";
         }
+
+
+        public string GetActionDone() //Domain behavor - business rules
+        {
+            throw new NotImplementedException();
+        }
+
+
+        public void AppServiceAction() //Applicaiton service action
+        {
+            throw new NotImplementedException();
+        }
     }
 }

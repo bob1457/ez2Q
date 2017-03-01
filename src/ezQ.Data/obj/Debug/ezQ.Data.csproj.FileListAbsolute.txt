@@ -13,3 +13,8 @@ C:\Projects\ez2Q\src\ezQ.Data\bin\Debug\ezQ.Data.pdb
 C:\Projects\ez2Q\src\ezQ.Data\obj\Debug\ezQ.Data.csprojResolveAssemblyReference.cache
 C:\Projects\ez2Q\src\ezQ.Data\obj\Debug\ezQ.Data.dll
 C:\Projects\ez2Q\src\ezQ.Data\obj\Debug\ezQ.Data.pdb
+C:\Projects\ez2Q\src\ezQ.Data\bin\Debug\ezQ.Data.dll.config
+C:\Projects\ez2Q\src\ezQ.Data\bin\Debug\EntityFramework.dll
+C:\Projects\ez2Q\src\ezQ.Data\bin\Debug\EntityFramework.SqlServer.dll
+C:\Projects\ez2Q\src\ezQ.Data\bin\Debug\EntityFramework.xml
+C:\Projects\ez2Q\src\ezQ.Data\bin\Debug\EntityFramework.SqlServer.xml

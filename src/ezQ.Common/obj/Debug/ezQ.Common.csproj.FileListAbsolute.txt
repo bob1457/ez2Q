@@ -13,3 +13,5 @@ C:\Projects\ez2Q\src\ezQ.Common\bin\Debug\ezQ.Common.pdb
 C:\Projects\ez2Q\src\ezQ.Common\obj\Debug\ezQ.Common.csprojResolveAssemblyReference.cache
 C:\Projects\ez2Q\src\ezQ.Common\obj\Debug\ezQ.Common.dll
 C:\Projects\ez2Q\src\ezQ.Common\obj\Debug\ezQ.Common.pdb
+C:\Projects\ez2Q\src\ezQ.Common\bin\Debug\log4net.dll
+C:\Projects\ez2Q\src\ezQ.Common\bin\Debug\log4net.xml

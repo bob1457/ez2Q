@@ -219,3 +219,13 @@ C:\Projects\ez2Q\src\ezQ.Api\obj\Debug\ezQ.Api.Migrations.InitialCreate.resource
 C:\Projects\ez2Q\src\ezQ.Api\obj\Debug\ezQ.Api.csproj.GenerateResource.Cache
 C:\Projects\ez2Q\src\ezQ.Api\obj\Debug\ezQ.Api.dll
 C:\Projects\ez2Q\src\ezQ.Api\obj\Debug\ezQ.Api.pdb
+C:\Projects\ez2Q\src\ezQ.Api\bin\Castle.Windsor.dll
+C:\Projects\ez2Q\src\ezQ.Api\bin\Castle.Core.dll
+C:\Projects\ez2Q\src\ezQ.Api\bin\Castle.Windsor.xml
+C:\Projects\ez2Q\src\ezQ.Api\bin\Castle.Core.xml
+C:\Projects\ez2Q\src\ezQ.Api\bin\ezQ.Data.dll
+C:\Projects\ez2Q\src\ezQ.Api\bin\ezQ.Data.pdb
+C:\Projects\ez2Q\src\ezQ.Api\bin\log4net.dll
+C:\Projects\ez2Q\src\ezQ.Api\bin\log4net.xml
+C:\Projects\ez2Q\src\ezQ.Api\bin\AutoMapper.dll
+C:\Projects\ez2Q\src\ezQ.Api\bin\AutoMapper.xml

@@ -19,3 +19,11 @@ C:\Projects\ez2Q\src\ezQ.Services\bin\Debug\ezQ.Core.pdb
 C:\Projects\ez2Q\src\ezQ.Services\obj\Debug\ezQ.Services.csprojResolveAssemblyReference.cache
 C:\Projects\ez2Q\src\ezQ.Services\obj\Debug\ezQ.Services.dll
 C:\Projects\ez2Q\src\ezQ.Services\obj\Debug\ezQ.Services.pdb
+C:\Projects\ez2Q\src\ezQ.Services\bin\Debug\Castle.Windsor.dll
+C:\Projects\ez2Q\src\ezQ.Services\bin\Debug\Castle.Core.dll
+C:\Projects\ez2Q\src\ezQ.Services\bin\Debug\Castle.Windsor.xml
+C:\Projects\ez2Q\src\ezQ.Services\bin\Debug\Castle.Core.xml
+C:\Projects\ez2Q\src\ezQ.Services\bin\Debug\log4net.dll
+C:\Projects\ez2Q\src\ezQ.Services\bin\Debug\log4net.xml
+C:\Projects\ez2Q\src\ezQ.Services\bin\Debug\AutoMapper.dll
+C:\Projects\ez2Q\src\ezQ.Services\bin\Debug\AutoMapper.xml

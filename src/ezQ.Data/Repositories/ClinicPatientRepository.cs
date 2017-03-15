@@ -1,12 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using ezQ.Core.Entities;
 using ezQ.Services.Interfaces;
 using ezQ.Services.ViewModels;
-using ezQ.Data.Interfaces;
 
 namespace ezQ.Data.Repositories
 {

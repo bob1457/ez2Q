@@ -262,6 +262,7 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="Content\Logs\" />
     <Folder Include="Views\" />
   </ItemGroup>
   <ItemGroup>

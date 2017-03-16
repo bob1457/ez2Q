@@ -5,6 +5,7 @@ using System.Net;
 using System.Net.Http;
 using System.Threading.Tasks;
 using System.Web.Http;
+using System.Web.Http.Results;
 using ezQ.Services.Interfaces;
 using ezQ.Services.ViewModels;
 
@@ -14,10 +15,12 @@ namespace ezQ.Api.Controllers
     public class ClinicController : BaseApiController
     {
         private readonly IClinicApplicationService _clinicApplicationService;
+        //private readonly IDoctorService _doctorService;
 
-        public ClinicController(IClinicApplicationService clinicPatientService)
+        public ClinicController(IClinicApplicationService clinicPatientService, IDoctorService doctorService)
         {
             _clinicApplicationService = clinicPatientService;
+            //_doctorService = doctorService;
         }
 
         [Route("create")]
@@ -35,6 +38,35 @@ namespace ezQ.Api.Controllers
             catch (Exception)
             {
                 
+                throw;
+            }
+
+            return Ok();
+        }
+
+        [Route("all")]
+        public IHttpActionResult GetAllClinics()
+        {
+            
+
+            return Ok();
+        }
+
+        [Route("addDoctor")]
+        public IHttpActionResult AddDoctorToClinic(DoctorAddViewModel doctorModel)
+        {
+            if (!ModelState.IsValid)
+            {
+                return BadRequest(ModelState);
+            }
+
+            try
+            {
+                _clinicApplicationService.AddDcotor(doctorModel);
+            }
+            catch (Exception)
+            {
+
                 throw;
             }
 

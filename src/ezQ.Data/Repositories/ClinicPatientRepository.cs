@@ -43,5 +43,29 @@ namespace ezQ.Data.Repositories
 
         }
 
+
+
+        public IEnumerable<Clinic> GetClinics()
+        {
+            //throw new NotImplementedException();
+            return _context.Clinics.Include("Doctor");
+        }
+
+
+        
+        public void AddDoctorToClinic(Doctor doctor)
+        {
+            _context.Doctors.Add(doctor);
+
+            try
+            {
+                _context.SaveChanges();
+            }
+            catch (Exception ex)
+            {
+
+                throw;
+            }
+        }
     }
 }

@@ -12,10 +12,15 @@ namespace ezQ.Services.Interfaces
     {
         IEnumerable<ClinicAddViewModel> GetAllClinic();
 
+        IEnumerable<Clinic> GetClinics();
+        
+            
         ClinicAddViewModel GetClinicById(int id);
 
         //void AddClinic(ClinicAddViewModel clinic);
 
         void AddClinic(Clinic clinic, ClinicAddress address);
+
+        void AddDoctorToClinic(Doctor doctor);
     }
 }

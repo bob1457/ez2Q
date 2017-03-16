@@ -8,6 +8,7 @@ using Microsoft.Practices.Unity;
 using Newtonsoft.Json.Serialization;
 
 using ezQ.Api.Infrastructure;
+using ezQ.Core.Entities;
 using ezQ.Core.Interfaces;
 using ezQ.Core.Services;
 using ezQ.Data.Repositories;
@@ -29,13 +30,15 @@ namespace ezQ.Api
             container.RegisterType<ITestService, TestService>(new HierarchicalLifetimeManager());
             container.RegisterType<IClinicService, ClinicService>(new HierarchicalLifetimeManager());
             container.RegisterType<IClinicApplicationService, ClinicApplicationService>(new HierarchicalLifetimeManager());
+            container.RegisterType<IDoctorService, DoctorService>(new HierarchicalLifetimeManager());
+           
 
 
             //Repositories
             //
-            container.RegisterType(typeof(IRepository<>), typeof(Repository<>));
+            container.RegisterType(typeof(IRepository<Doctor>), typeof(Repository<Doctor>));
             container.RegisterType<IClinicPatientRepository, ClinicPatientRepository>(new HierarchicalLifetimeManager());
-
+            container.RegisterType(typeof(IRepository<Doctor>), typeof(DoctorRepository));
 
             //Resolver
             //

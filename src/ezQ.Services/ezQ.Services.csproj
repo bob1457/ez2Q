@@ -53,9 +53,13 @@
     <Compile Include="Interfaces\IClinicPatientRepository.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Services\ClinicApplicationService.cs" />
+    <Compile Include="Services\DoctorService.cs" />
+    <Compile Include="Interfaces\IDoctorService.cs" />
     <Compile Include="TestService.cs" />
     <Compile Include="ViewModels\ClinicAddViewModel.cs" />
     <Compile Include="ViewModels\ClinicPatientViewModel.cs" />
+    <Compile Include="ViewModels\DoctorAddViewModel.cs" />
+    <Compile Include="ViewModels\DoctorViewModel.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\ezQ.Core\ezQ.Core.csproj">

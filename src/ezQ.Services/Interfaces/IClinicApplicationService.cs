@@ -14,5 +14,7 @@ namespace ezQ.Services.Interfaces
         ViewModels.ClinicPatientViewModel GetClinicById(int id);
 
         void AddClinic(ClinicAddViewModel clinicAddViewModel);
+
+        void AddDcotor(DoctorAddViewModel doctorAddViewModel);
     }
 }

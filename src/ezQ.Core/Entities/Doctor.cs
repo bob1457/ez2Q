@@ -17,13 +17,25 @@ namespace ezQ.Core.Entities
         {
             
         }
-
+        
         public Doctor(IRepository<Doctor> doctorRepository)
         {
             _doctorRepository = doctorRepository;
         }
 
         #region Attributes
+
+        public Doctor(string firstName, string lastName, 
+            string professionalTitle, int clinicId, 
+            string contactTel, string notes)
+        {
+            FirstName = firstName;
+            LastName = lastName;
+            ProfessionalTitle = professionalTitle;
+            ClinicId = clinicId;
+            ContactTel = contactTel;
+            Notes = notes;
+        }
 
         public int Id { get; set; }
 
@@ -64,6 +76,13 @@ namespace ezQ.Core.Entities
         {
             _doctorRepository.Add(doctor);
         }
+
+        public static Doctor Create(string firstName, string lastName, string proTitle, int clinicId, string contactTel, string notes) //create a new object - Factory pattern
+        {
+            return Create(firstName, lastName, proTitle, clinicId, contactTel, notes );
+        }
+
+
 
         public void Update(Doctor doctor)
         {

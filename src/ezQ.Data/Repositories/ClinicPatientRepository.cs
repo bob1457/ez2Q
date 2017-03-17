@@ -27,7 +27,7 @@ namespace ezQ.Data.Repositories
         {
             //throw new NotImplementedException();
             
-            clinic.ClinicAddress = address;
+            //clinic.ClinicAddress = address;
 
             _context.Clinics.Add(clinic);
 

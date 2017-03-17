@@ -35,10 +35,11 @@ namespace ezQ.Services.Services
 
             //_clinicReposiotry.AddDoctorToClinic(doctor);
 
-            doctor.Add(doctor);
+            //doctor.Add(doctor);
 
         }
 
+        //No doctor service is required. Actions for Doctor entity can be done via entity's method
 
         //public DoctorAddViewModel Add(DoctorAddViewModel doctorModel)
         //{

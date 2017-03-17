@@ -11,7 +11,7 @@ namespace ezQ.Core.Entities
     [Table("Clinic")]
     public partial class Clinic
     {
-        private readonly IRepository<Clinic> _clinicRepository;
+        //private readonly IRepository<Clinic> _clinicRepository;
 
         public Clinic()
         {
@@ -20,10 +20,10 @@ namespace ezQ.Core.Entities
 
         //DI Implementation
 
-        public Clinic(IRepository<Clinic> clinicRepository )
-        {
-            _clinicRepository = clinicRepository;
-        }
+        //public Clinic(IRepository<Clinic> clinicRepository )
+        //{
+        //    _clinicRepository = clinicRepository;
+        //}
         
         
         public Clinic(string clinicName, string clinicDesc, string clinicContactTel, 
@@ -63,6 +63,9 @@ namespace ezQ.Core.Entities
 
         public bool IsActive { get; set; }
 
+        [StringLength(150)]
+        public string ClinicLogImgUrl { get; set; }
+
         [Column(TypeName = "datetime2")]
         public DateTime CreateDate { get; set; }
 
@@ -87,13 +90,13 @@ namespace ezQ.Core.Entities
         public void Deactivate(Clinic clinic)
         {
             clinic.IsActive = false;
-            _clinicRepository.Update(clinic);
+            //_clinicRepository.Update(clinic);
         }
 
         public void Activate(Clinic clinic)
         {
             clinic.IsActive = true;
-            _clinicRepository.Update(clinic);
+            //_clinicRepository.Update(clinic);
         }
 
         #endregion

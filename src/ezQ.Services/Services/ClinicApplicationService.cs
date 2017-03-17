@@ -22,7 +22,7 @@ namespace ezQ.Services.Services
         private readonly IClinicPatientRepository _clinicPatientRepository;
         private readonly IRepository<Doctor> _doctorReposiotry;
         private readonly IClinicService _clinicService;
-        private readonly IDoctorService _doctorService;
+        
 
         public ClinicApplicationService(IClinicPatientRepository clinicPatientRepository, 
             IRepository<Doctor> clinicReposiotry, 
@@ -31,7 +31,6 @@ namespace ezQ.Services.Services
             _clinicPatientRepository = clinicPatientRepository;
             _doctorReposiotry = clinicReposiotry;
             _clinicService = clinicService;
-            _doctorService = doctorService;
         }
 
 
@@ -49,56 +48,21 @@ namespace ezQ.Services.Services
         {
             //throw new NotImplementedException();
 
-            //Create object for repository operations
-            //
-            var clinic = new Clinic(clinicAddViewModel.ClinicName, 
-                clinicAddViewModel.ClinicDesc, 
-                clinicAddViewModel.ClinicContactTel,
-                clinicAddViewModel.ClinicWebsite,
-                clinicAddViewModel.ClinicCategoryId,
-                clinicAddViewModel.ClinicTypeId);
+            var clinic = _clinicService.AddClinic(clinicAddViewModel.ClinicName, clinicAddViewModel.ClinicDesc, clinicAddViewModel.ClinicContactTel, clinicAddViewModel.ClinicCategoryId, clinicAddViewModel.ClinicTypeId,
+                clinicAddViewModel.NumberStreet, clinicAddViewModel.City, clinicAddViewModel.ProvState, clinicAddViewModel.PostZipCode, clinicAddViewModel.Country);
 
-            var clinicAddress = new ClinicAddress(clinicAddViewModel.NumberStreet,
-                clinicAddViewModel.City,
-                clinicAddViewModel.ProvState,
-                clinicAddViewModel.PostZipCode,
-                clinicAddViewModel.Country);
-
-            clinic.CreateDate = DateTime.Now;
-            clinic.UpdateDate = DateTime.Now;
-
-            _clinicPatientRepository.AddClinic(clinic, clinicAddress);
+            
+            _clinicPatientRepository.AddClinic(clinic, clinic.ClinicAddress);
         }
 
-        //public void AddDoctor(DoctorAddViewModel doctorModel)
-        //{
-        //    _doctorService.Add(doctorModel);
-
-        //}
-
-        //public DoctorAddViewModel AddDoctor(DoctorAddViewModel doctorModel)
-        //{
-        //    Doctor doctor = Doctor.Create(doctorModel.FirstName, doctorModel.LastName,
-        //        doctorModel.ProfessionalTitle, doctorModel.ClinicId, doctorModel.ContactTel, doctorModel.Notes);
-
-        //    _clinicReposiotry.Add(doctor);
-
-        //    return AutoMapper.Mapper.Map<Doctor, DoctorAddViewModel>(doctor);
-
-        //}
-
-
-
-
-
-
+        
         public void AddDcotor(DoctorAddViewModel doctorAddViewModel)
         {
-            //Doctor doctor = Doctor.Create(doctorAddViewModel.FirstName, doctorAddViewModel.LastName,
-            //    doctorAddViewModel.ProfessionalTitle, doctorAddViewModel.ClinicId, doctorAddViewModel.ContactTel, doctorAddViewModel.Notes);
-
-            Doctor doctor = new Doctor(doctorAddViewModel.FirstName, doctorAddViewModel.LastName,
+            Doctor doctor = Doctor.Create(doctorAddViewModel.FirstName, doctorAddViewModel.LastName,
                 doctorAddViewModel.ProfessionalTitle, doctorAddViewModel.ClinicId, doctorAddViewModel.ContactTel, doctorAddViewModel.Notes);
+
+            //Doctor doctor = new Doctor(doctorAddViewModel.FirstName, doctorAddViewModel.LastName,
+            //    doctorAddViewModel.ProfessionalTitle, doctorAddViewModel.ClinicId, doctorAddViewModel.ContactTel, doctorAddViewModel.Notes);
 
             doctor.JoinDate = DateTime.Now;
             doctor.UpdateDate = DateTime.Now;

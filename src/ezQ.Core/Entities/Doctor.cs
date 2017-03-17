@@ -11,17 +11,17 @@ namespace ezQ.Core.Entities
     [Table("Doctor")]
     public partial class Doctor
     {
-        private readonly IRepository<Doctor> _doctorRepository;
+        //private readonly IRepository<Doctor> _doctorRepository;
 
         public Doctor()
         {
             
         }
         
-        public Doctor(IRepository<Doctor> doctorRepository)
-        {
-            _doctorRepository = doctorRepository;
-        }
+        //public Doctor(IRepository<Doctor> doctorRepository)
+        //{
+        //    _doctorRepository = doctorRepository;
+        //}
 
         #region Attributes
 
@@ -59,6 +59,13 @@ namespace ezQ.Core.Entities
 
         public bool IsActive { get; set; }
 
+        [StringLength(150)]
+        public string AvatarImgUrlLg { get; set; }
+
+        [StringLength(150)]
+        public string AvatarImgUrlSm { get; set; }
+
+
         [Column(TypeName = "datetime2")]
         public DateTime JoinDate { get; set; }
 
@@ -72,14 +79,24 @@ namespace ezQ.Core.Entities
 
         #region Behavors
 
-        public void Add(Doctor doctor)
-        {
-            _doctorRepository.Add(doctor);
-        }
+        //public void Add(Doctor doctor)
+        //{
+        //    //_doctorRepository.Add(doctor);
+
+
+            
+
+        //    doctor.JoinDate = DateTime.Now;
+        //    doctor.UpdateDate = DateTime.Now;
+
+
+        //}
 
         public static Doctor Create(string firstName, string lastName, string proTitle, int clinicId, string contactTel, string notes) //create a new object - Factory pattern
         {
-            return Create(firstName, lastName, proTitle, clinicId, contactTel, notes );
+            //return Create(firstName, lastName, proTitle, clinicId, contactTel, notes );
+
+            return new Doctor(firstName, lastName, proTitle, clinicId, contactTel, notes);
         }
 
 
@@ -88,20 +105,20 @@ namespace ezQ.Core.Entities
         {
             doctor.UpdateDate = DateTime.Now;
 
-            _doctorRepository.Update(doctor);
+            //_doctorRepository.Update(doctor);
         }
 
 
         public void Deactivate(Doctor doctor)
         {
             doctor.IsActive = false;
-            _doctorRepository.Update(doctor);
+            //_doctorRepository.Update(doctor);
         }
 
         public void Activate(Doctor doctor)
         {
             doctor.IsActive = true;
-            _doctorRepository.Update(doctor);
+            //_doctorRepository.Update(doctor);
         }
 
 

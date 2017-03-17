@@ -30,7 +30,7 @@ namespace ezQ.Api
             container.RegisterType<ITestService, TestService>(new HierarchicalLifetimeManager());
             container.RegisterType<IClinicService, ClinicService>(new HierarchicalLifetimeManager());
             container.RegisterType<IClinicApplicationService, ClinicApplicationService>(new HierarchicalLifetimeManager());
-            container.RegisterType<IDoctorService, DoctorService>(new HierarchicalLifetimeManager());
+           
            
 
 

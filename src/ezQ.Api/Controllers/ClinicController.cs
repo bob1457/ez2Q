@@ -17,7 +17,7 @@ namespace ezQ.Api.Controllers
         private readonly IClinicApplicationService _clinicApplicationService;
         //private readonly IDoctorService _doctorService;
 
-        public ClinicController(IClinicApplicationService clinicPatientService, IDoctorService doctorService)
+        public ClinicController(IClinicApplicationService clinicPatientService)
         {
             _clinicApplicationService = clinicPatientService;
             //_doctorService = doctorService;

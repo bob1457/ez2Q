@@ -25,12 +25,12 @@ namespace ezQ.Services.Services
         
 
         public ClinicApplicationService(IClinicPatientRepository clinicPatientRepository, 
-            IRepository<Doctor> clinicReposiotry, 
-            IClinicService clinicService, IDoctorService doctorService)
+            IRepository<Doctor> clinicReposiotry
+            )
         {
             _clinicPatientRepository = clinicPatientRepository;
             _doctorReposiotry = clinicReposiotry;
-            _clinicService = clinicService;
+            
         }
 
 
